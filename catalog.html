@@ -27,40 +27,66 @@
 
 	  <h1>Магазин готовых шаблонов</h1>
 
-    <!--Форма Фильтр шаблонов
-	   <section> 
-	      <h2>Фильтр шаблонов</h2>
-
-        <div>
-          <h3>Стоимость:</h3>
+      <section> 
+	      <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
           
-        </div>
+            <!--пока не знаю как сделать двойной бегунок, проходили только одинарный
+            <fieldset>>
+              <legend>Стоимость:</legend>
+              <input type="range" min="0" step="1" max="15000"> 
+            </fieldset>
+            -->
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="setka" value="adaptiv" id="adaptiv-filter" checked>
+                <label for="adaptiv-filter">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="setka" value="fixed" id="fixed-filter">
+                <label for="fixed-filter">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="setka" value="rubber" id="rubber-filter">
+                <label for="rubber-filter">Аксессуары</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <div>
-          <h3>Сетка:</h3>
-          <ul>
-            <li>Адаптивная</li>
-            <li>Фиксированная</li>
-            <li>Резиновая</li>
-          </ul>
-        </div>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slaider" id="filter-slaider" checked>
+                <label for="filter-slaider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blok-advantage" id="filter-blok-advantage">
+                <label for="filter-blok-advantage">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <div>
-          <h3>Особенности:</h3>
-          <ul>
-            <li><a href="slider-catalog.html">Слайдер</a></li>
-            <li><a href="blok-preimushestv-catalog.html">Блок преимуществ</a></li>
-            <li><a href="news-catalog.html">Новости</a></li>
-            <li><a href="gallery-catalog.html">Галерея</a></li>
-            <li><a href="basket-catalog.html">Корзина</a></li>
-          </ul>
-        </div>
+          <button type="submit">Показать</button>
 
-        <a href="filter-catalog.html">Показать</a>
+        </form>
 	      
-	   </section>
-    -->
-
+	    </section>
+    
     <!--Форма Сортировка
      <section>
        <h3>Сортировать:</h3>
@@ -188,18 +214,18 @@
       
      <ul>
          <li>
-            <a href="#">
-                <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            <a href="#" aria-label="Вконтакте">
+                <img src="img/vk-icon.svg" width="26" height="15">
             </a>
          </li>  
          <li>
-            <a href="#">
-                <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            <a href="#" aria-label="Фейсбук">
+                <img src="img/fb-icon.svg" width="12" height="22">
             </a>
          </li>  
          <li>
-            <a href="#">
-                <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+            <a href="#" aria-label="Инстаграм">
+                <img src="img/insta-icon.svg" width="21" height="21">
             </a>
          </li>  
       </ul> 	
@@ -208,9 +234,25 @@
     </footer>
 
 	<section>
-		<h2>Напишите нам</h2>
-		<!--Здесь будет форма Напишите нам-->
-	</section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" value="" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" value="" placeholder="email@example.com">
+      </p>
+      <div>
+        <p>Текст письма:</p>
+        <textarea name="letter" id="letter-field" rows="4">
+В свободной форме
+        </textarea>
+      </div>
+      <input type="submit" value="Отправить">
+    </form>
+  </section>
 
   </body>
 </html>
