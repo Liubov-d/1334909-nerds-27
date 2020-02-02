@@ -29,14 +29,35 @@
 
       <section> 
 	      <h2 class="visually-hidden">Фильтр шаблонов</h2>
+
+            <div>
+            <p>Стоимость:</p>
+            <div class="price-slider">
+              <div class="line-slider">
+              </div>
+              <ul>
+                <li>
+                  <input type="image" src="img/filter-button.png" width="20" height="23" class="filter-button" name="">
+                </li>
+                <li>
+                  <input type="image" src="img/filter-button.png" width="20" height="23" class="filter-button" name="">
+                </li>
+              </ul>
+            </div>
+            <ul>
+              <li>
+                <label for="price-from-filter">От</label>
+                <input type="text" name="price-from" id="price-from-filter" value="0">
+              </li>
+              <li>
+                <label for="price-to-filter">До</label>
+                <input type="text" name="price-to" id="price-to-filter" value="15000">
+              </li>
+            </ul>
+          </div>  
+
         <form method="get" action="https://echo.htmlacademy.ru">
-          
-            <!--пока не знаю как сделать двойной бегунок, проходили только одинарный
-            <fieldset>>
-              <legend>Стоимость:</legend>
-              <input type="range" min="0" step="1" max="15000"> 
-            </fieldset>
-            -->
+  
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
@@ -87,17 +108,19 @@
 	      
 	    </section>
     
-    <!--Форма Сортировка
-     <section>
+      <section>
        <h3>Сортировать:</h3>
        <ul>
          <li>По цене</li>
          <li>По типу</li>
          <li>По названию</li>
        </ul>
+       <div>
+          <input type="image" src="img/icon-arrow-down.png" width="11" height="10" class="icon-arrow" name="icon-down">
+          <input type="image" src="img/icon-arrow-up.png" width="11" height="10" class="icon-arrow" name="icon-up">
+       </div>
      </section>
-     -->
-
+     
 	  <section>
         <ul>
       	    <li>
