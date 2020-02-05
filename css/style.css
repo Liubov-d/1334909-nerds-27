@@ -3,21 +3,13 @@ body {
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283136;
-    
+     
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
   color: #000000;
-}
-
-img {
-	display: block;
 }
 
 .button {
@@ -104,13 +96,14 @@ img {
  color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation .site-navigation::after li {
-position: absolute;
-top: 3px;
-left: 0;
-width: 75px;
-border-top: 2px solid #fb565a;
+a.nav-inner-page::after {
+background-color: #fb565a;
 content: "";
+position: absolute;
+width: 75px;
+height: 2px;
+top: 163px;
+left: 0px;
 }
 
 
