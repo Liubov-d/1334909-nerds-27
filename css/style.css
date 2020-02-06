@@ -10,11 +10,12 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
 .button {
   font: inherit;
-
+  
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -22,6 +23,9 @@ a {
 
   background-color: #fb565a;
   border: none;
+  width: 240px;
+  height: 50px;
+  vertical-align: middle;
 }
 
 .button:hover,
@@ -139,8 +143,13 @@ left: 0px;
   color: #000000;
 }
 
+.portfolio-item .button-red {
+    width: 160px;
+}
+
 .portfolio-item .button-green {
   background-color: #00ca74;
+  width: 160px;
 }
 
 .portfolio-item .button-green:hover,
@@ -154,6 +163,7 @@ left: 0px;
 
 .portfolio-item .button-yellow {
   background-color: #efc84a;
+  width: 160px;
 }
 
 .portfolio-item .button-yellow:hover,
@@ -239,6 +249,7 @@ left: 0px;
 
 .adress .button-adress {
   color: #ffffff;
+  width: 219px;
 }
 
 .footer-social ul {
@@ -247,6 +258,9 @@ left: 0px;
 
 .social-button {
   background-color: #e1e1e1;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
 }
 
 .social-button a:active {
@@ -309,6 +323,7 @@ display: none;
 .filter .button-filter {
   background-color: #eeeeee;
   color: #000000;
+  width: 260px;
 }
 
 .filter .button-filter:hover,
@@ -402,6 +417,10 @@ display: none;
   padding-bottom: 20px;
 }
 
+.button .button-catalog-item-info {
+  width: 200px;
+}
+
 .number-pages ul {
 list-style: none;
 }
@@ -409,6 +428,11 @@ list-style: none;
 .number-pages .button-number-pages {
   background-color: #eeeeee;
   color: #000000;
+  width: 50px;
+}
+
+.number-pages .next-button {
+  width: 260px;
 }
 
 .number-pages .button-number-pages:hover,
