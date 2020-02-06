@@ -24,8 +24,9 @@ a {
   background-color: #fb565a;
   border: none;
   width: 240px;
-  height: 50px;
   vertical-align: middle;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .button:hover,
@@ -259,8 +260,9 @@ left: 0px;
 .social-button {
   background-color: #e1e1e1;
   width: 79px;
-  height: 79px;
   border-radius: 50%;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .social-button a:active {
