@@ -10,8 +10,11 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+  /*
   display: block;
+  */
 }
+
 
 .button {
   font: inherit;
@@ -446,4 +449,109 @@ list-style: none;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+}
+
+/*--Временно сетка--*/
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 1750px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url(img/nerds-index.jpg);
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: rgba(229, 10, 216, 0.5);
+  background-color: transparent;
+}
+
+.main-header {
+  /* Временно для сетки */
+  width: 100%;
+  margin-bottom: 0px;
+  min-height: 132px;
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  /* Временно для сетки */
+  min-height: 132px;
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  background-color: #eeeeee;
+  
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color: transparent;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  
+  /* Временно для сетки */
+  background-color:  rgba(31, 227, 21, 0.5);
+  background-color: transparent;
+}
+
+.site-navigation {
+  width: 438px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color:  rgba(21, 210, 227, 0.5);
+  background-color: transparent;
+}
+
+.basket-navigation {
+  width: 115px;
+  margin: 0;
+  padding: 0;
+   
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color:  rgba(21, 31, 227, 0.5);
+  background-color: transparent;
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 171px;
+}
+
+.portfolio {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 507px;
 }
