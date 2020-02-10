@@ -17,6 +17,14 @@ a {
   display: block;
   */
 }
+  
+  /*
+  разметка для вёрстки
+  */
+  
+* { 
+  outline:1px solid red;
+}
 
 p {
   font-size: 16px;
@@ -357,7 +365,7 @@ display: none;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-sorted .sorted h3 {
+.sorted .sorted-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
