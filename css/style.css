@@ -6,8 +6,16 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+
+    /* Временно для сетки */
+  position: absolute;
+  background-image: url("img/nerds-index.jpg");
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
        
   background-color: #ffffff;
+  /*временно для вёрстки*/
+  background-color: transparent;
 }
 
 a {
@@ -307,15 +315,16 @@ left: 0px;
 display: none;
 }
 
-.container-inner h1 {
-  background-color: #eeeeee;
-  margin: 0px;
+.catalog-header h1 {
+  min-height: 100px;
+  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 116px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   text-align: center;
+  background-color: #eeeeee;
   color: #000000;
 }
 
@@ -459,26 +468,26 @@ display: none;
   width: 200px;
 }
 
-.number-pages ul {
+.pagination ul {
 list-style: none;
 }
 
-.number-pages .button-number-pages {
+.pagination .button-pagination {
   background-color: #eeeeee;
   color: #000000;
   width: 50px;
 }
 
-.number-pages .next-button {
+.pagination .next-button {
   width: 260px;
 }
 
-.number-pages .button-number-pages:hover,
-.number-pages .button-number-pages:focus {
+.pagination .button-pagination:hover,
+.pagination .button-pagination:focus {
   background-color: #dfdfdf;
 }
 
-.number-pages .button-number-pages:active {
+.pagination .button-pagination:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
@@ -492,12 +501,7 @@ body {
   min-height: 1750px;
 }
 
-body {
-  /* Временно для сетки */
-  background-image: url(img/nerds-index.jpg);
-  background-size: 1440px auto;
-  background-repeat: no-repeat;
-}
+
 
 .container {
   width: 1160px;
@@ -508,7 +512,6 @@ body {
 .main-header {
   /* Временно для сетки */
   width: 100%;
-  margin-bottom: 80px;
   min-height: 132px;
   background-color: #eeeeee;
 }
@@ -734,12 +737,7 @@ margin-bottom: 0px;
   min-height: 100px;
 }
 
-.catalog-header {
-  /* Временно для сетки */
-  min-height: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 
 .catalog-columns {
   display: flex;
@@ -762,7 +760,7 @@ margin-bottom: 0px;
 
 .sorted,
 .catalog,
-.number-pages {
+.pagination {
   width: 760px;
 }
 
@@ -777,7 +775,7 @@ margin-bottom: 0px;
   min-height: 700px;
   }
 
-  .number-pages {
+  .pagination {
   /* Временно для сетки */
   min-height: 50px;
   }
