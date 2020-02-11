@@ -520,7 +520,7 @@ body {
   /* Временно для сетки */
   width: 100%;
   padding-top: 49px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   min-height: 132px;
   background-color: #eeeeee;
 }
