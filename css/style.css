@@ -387,31 +387,33 @@ margin-bottom: 80px;
 }
 
 .about-us h3 {
-  margin: 0;
-}
-
-.about-us h3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   text-align: right;
   text-transform: uppercase;
   padding-right: 15px;
+  margin: 0;
   margin-top: 30px;
   margin-bottom: 50px;
   color: #000000;
 }
 
+.table-about-us {
+  margin-left: 30px;
+}
+
 .table-about-us td {
 	padding: 10px;
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 .table-about-us .table-persent {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
 
   color: #000000;
@@ -419,14 +421,27 @@ margin-bottom: 80px;
 
 .table-text td {
   padding-top: 25px;
-}
-
-.table-about-us .table-text {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-align: left;
   color: #283136;
+}
+
+.table-about-us {
+  position: relative;
+}
+
+.table-persent span {
+  position: absolute;
+  top: 0;
+  
+  font-size: 25px;
+  top: 10px;
+  line-height: 10px;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .partners {
@@ -443,15 +458,6 @@ margin-bottom: 0px;
   padding-bottom: 44px;
 
   list-style: none;
-  
-  /* Временно для сетки */
-  min-height: 90px;
-}
-
-.list-partners-logo {
-
-  /* Временно для сетки */
-  min-height: 90px;
 }
 
 .partners a {
@@ -463,9 +469,7 @@ margin-bottom: 0px;
  	opacity: 1;
 }
 
-.portfolio-item .button-green:active {
-  background-color: #00aa62;
-}
+
 
 .partners a:active {
 	opacity: 0.1;
