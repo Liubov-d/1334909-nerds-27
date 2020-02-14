@@ -49,11 +49,7 @@ a {
   border: none;
   width: 240px;
   vertical-align: middle;
-  /* временно
-  padding-top: 15px;
-  padding-bottom: 15px;
-  */
-}
+ }
 
 .button:hover,
 .button:focus {
@@ -354,7 +350,7 @@ margin-bottom: 80px;
 }
 
 .features p {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .features h3 {
@@ -377,7 +373,7 @@ margin-bottom: 80px;
 
 .features-item {
   padding-top: 11px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 }
 
 .about-us {
@@ -482,8 +478,6 @@ margin-bottom: 80px;
  	opacity: 1;
 }
 
-
-
 .partners a:active {
 	opacity: 0.1;
 }
@@ -572,10 +566,7 @@ background-color: #eeeeee;
 
 .main-footer {
   padding: 0;
-   margin-top: 69px;
-
-  /* Временно для сетки */
-  min-height: 217px;
+  margin-top: 60px;
   background-color: white;
 }
 
@@ -583,35 +574,49 @@ background-color: #eeeeee;
   display: flex;
 }
 
-.footer-social {
-  width: 145px;
-
-  /* Временно для сетки */
-  min-height: 100px;
-}
-
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .social-button {
-  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 79px;
+  height: 79px;
   border-radius: 50%;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  background-color: #e1e1e1;
 }
 
-.social-button a:active {
-	opacity: 0.3;
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
 
+.social-button:active {
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.social-icon:active {
+  opacity: 0.3;
 }
 
 .footer-friend {
+  margin-left: 140px;
   width: 600px;
+}
 
-  /* Временно для сетки */
-  min-height: 100px;
+.footer-friend p {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .main-footer .footer-sale {
