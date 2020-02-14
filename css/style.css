@@ -220,6 +220,10 @@ display: block;
 
 }
 
+.slider-info .button-slider {
+  margin-top: 25px;
+}
+
 .portfolio {
 margin-bottom: 80px;
 }
@@ -486,15 +490,16 @@ margin-bottom: 80px;
 
 /* линии между лого партнеров */
 
-.list-partners-logo {
+.partners-list li {
 position: relative;
+margin-right: 42px;
 }
 
-.list-partners-logo::before {
+.partners-list li::after {
 content: "";
 position: absolute;
-top: 20%;
-left: -48px;
+top: 15px;
+right: -48px;
 
 width: 2px;
 height: 52px;
@@ -502,6 +507,13 @@ height: 52px;
 background-color: #eeeeee;
 } 
 
+.partners-list li:last-child {
+  margin-right: 0;
+}
+
+.list-partners-right::after {
+  display: none;
+}
 
 .contacts {
   display: flex;
@@ -553,6 +565,7 @@ background-color: #eeeeee;
 }
 
 .adress .button-adress {
+  margin-top: 40px;
   color: #ffffff;
   width: 219px;
 }
