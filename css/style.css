@@ -308,7 +308,9 @@ margin-bottom: 80px;
   background-color: #e5a722;
 }
 
-.index-columns::before {
+.index-columns::before,
+.partners::before,
+.contacts::before {
   content: "";
   position: absolute;
   width: 1160px;
@@ -484,15 +486,16 @@ margin-bottom: 80px;
 
 /* линии между лого партнеров */
 
-.list-line {
-  display: inline-block;
-  width: 2px;
-  height: 52px;
- 
-  vertical-align: middle;
+a.list-partners-logo::before {
+content: "";
+position: absolute;
+top: 20px;
+right: 48px;
+width: 2px;
+height: 52px;
 
-  background-color: #eeeeee;
-}
+background-color: #eeeeee;
+} 
 
 
 .contacts {
@@ -507,18 +510,11 @@ margin-bottom: 80px;
   min-height: 416px;
 }
 
-.map {
-  width: 100%;
-  
-  position: relative;
 
-  /* Временно для сетки */
-  min-height: 416px;
-}
 
 .adress {
   display: block;
-  width: 319px;
+  width: 269px;
   min-height: 250px;
   position: absolute;
   padding-left: 50px;
@@ -529,7 +525,14 @@ margin-bottom: 80px;
   background-color: white;
 }
 
-.adress .adress-header {
+.adress p,
+.adress h3 {
+  margin: 0;
+  padding: 0;
+  color: #666666;
+}
+
+.adress h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -537,9 +540,8 @@ margin-bottom: 80px;
   color: #000000;
 }
 
-.adress p,
-.adress a {
-	color: #666666;
+.adress p {
+  padding-top: 15px;
 }
 
 .adress .button-adress {
