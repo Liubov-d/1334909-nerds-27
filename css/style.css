@@ -486,11 +486,16 @@ margin-bottom: 80px;
 
 /* линии между лого партнеров */
 
-a.list-partners-logo::before {
+.list-partners-logo {
+position: relative;
+}
+
+.list-partners-logo::before {
 content: "";
 position: absolute;
-top: 20px;
-right: 48px;
+top: 20%;
+left: -48px;
+
 width: 2px;
 height: 52px;
 
@@ -505,9 +510,6 @@ background-color: #eeeeee;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
-  
-  /* Временно для сетки */
-  min-height: 416px;
 }
 
 
