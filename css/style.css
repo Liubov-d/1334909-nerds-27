@@ -445,22 +445,29 @@ margin-bottom: 80px;
 }
 
 .partners {
-margin-top: 0px;
-margin-bottom: 0px;
+  min-height: 180px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
 }
 
 .partners-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  margin-left: 30px;
+  margin-right: 40px;
+  padding: 0;
+  padding-top: 44px;
+  padding-bottom: 40px;
 
   list-style: none;
 }
 
 .partners a {
+  margin: 0;
+  padding: 0;
 	opacity: 0.2;
 }
 
@@ -474,6 +481,19 @@ margin-bottom: 0px;
 .partners a:active {
 	opacity: 0.1;
 }
+
+/* линии между лого партнеров */
+
+.list-line {
+  display: inline-block;
+  width: 2px;
+  height: 52px;
+ 
+  vertical-align: middle;
+
+  background-color: #eeeeee;
+}
+
 
 .contacts {
   display: flex;
