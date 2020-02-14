@@ -541,7 +541,13 @@ background-color: #eeeeee;
 }
 
 .adress p {
-  padding-top: 15px;
+  padding-top: 18px;
+  line-height: 18px;
+}
+
+.adress .adress-tel {
+  display: inline-block;
+  padding-top: 20px;
 }
 
 .adress .button-adress {
