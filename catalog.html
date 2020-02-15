@@ -43,99 +43,93 @@
 
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-              <fieldset>
-              <legend>Стоимость:</legend>
-              <div class="price-slider">
-              <div class="line-slider">
-              </div>
-              <ul>
-                <li>
-                  <img src="img/filter-button.png" width="20" height="23" class="filter-button-price-from">
-                </li>
-                <li>
-                  <img src="img/filter-button.png" width="20" height="23" class="filter-button-price-to">
-                </li>
-              </ul>
-              </div>
-                <ul>
-                  <li>
-                    <label for="price-from-filter">От</label>
-                    <input class="filter-input" type="text" name="price-from" id="price-from-filter" value="0">
-                  </li>
-                  <li>
-                    <label for="price-to-filter">До</label>
-                    <input class="filter-input" type="text" name="price-to" id="price-to-filter" value="15000">
-                  </li>
-                </ul>
+                <fieldset class="filter-item">
+                  <legend>Стоимость:</legend>
+                  <div class="range-filter">
+
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
+
+                    <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                        <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                    </div>
+                  </div>
                 </fieldset>  
   
-              <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li>
-                <input class="filter-input filter-input-radio" type="radio" name="setka" value="adaptiv" id="adaptiv-filter" checked>
-                <label for="adaptiv-filter">Адаптивная</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-radio" type="radio" name="setka" value="fixed" id="fixed-filter">
-                <label for="fixed-filter">Фиксированная</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-radio" type="radio" name="setka" value="rubber" id="rubber-filter">
-                <label for="rubber-filter">Аксессуары</label>
-              </li>
-            </ul>
-              </fieldset>
+                <fieldset class="filter-item">
+                  <legend>Сетка:</legend>
+                  <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="setka" value="adaptiv" id="adaptiv-filter" checked>
+                        <label for="adaptiv-filter">Адаптивная</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="setka" value="fixed" id="fixed-filter">
+                        <label for="fixed-filter">Фиксированная</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="setka" value="rubber" id="rubber-filter">
+                        <label for="rubber-filter">Аксессуары</label>
+                      </li>
+                  </ul>
+                </fieldset>
 
-              <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li>
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="slaider" id="filter-slaider" checked>
-                <label for="filter-slaider">Слайдер</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="blok-advantage" id="filter-blok-advantage">
-                <label for="filter-blok-advantage">Блок преимуществ</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li>
-                <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-              </fieldset>
+                <fieldset class="filter-item">
+                  <legend>Особенности:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slaider" id="filter-slaider" checked>
+                      <label for="filter-slaider">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blok-advantage" id="filter-blok-advantage">
+                      <label for="filter-blok-advantage">Блок преимуществ</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галерея</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                      <label for="filter-basket">Корзина</label>
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <button class="button button-filter" type="submit">Показать</button>
+                <button class="button button-filter" type="submit">Показать</button>
 
-            </form>
+              </form>
 	         </section>
+
           <div class="catalog-sorted">
               <section class="sorted">
-       <b class="sorted-title">Сортировать:</b>
-       <ul>
-         <li><a href="#">По цене</a></li>
-         <li><a href="#">По типу</a></li>
-         <li><a href="#">По названию</a></li>
-       </ul>
-       <div>
-          <a href="#">
-            <input type="image" src="img/icon-arrow-down.png" width="11" height="10" class="icon-arrow" name="icon-down">
-          </a>
-          <a href="#">
-            <input type="image" src="img/icon-arrow-up.png" width="11" height="10" class="icon-arrow" name="icon-up">
-          </a>
-       </div>
+                <b class="sorted-title">Сортировать:</b>
+                <ul class="sorted-type">
+                  <li><a class="sorted-type-current" href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По названию</a></li>
+                </ul>
+                <div class="sorted-arrow">
+                  <a href="#">
+                    <input type="image" src="img/icon-arrow-down.png" width="11" height="10" class="icon-arrow" name="icon-down">
+                  </a>
+                  <a href="#">
+                    <input type="image" src="img/icon-arrow-up.png" width="11" height="10" class="icon-arrow" name="icon-up">
+                  </a>
+                </div>
               </section>
      
-	            <section class="catalog">
+	     <section class="catalog">
                   <ul class="catalog-list">
       	    <li class="catalog-item">
               <div class="catalog-item-info">
