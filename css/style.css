@@ -1,7 +1,7 @@
 html,
 body {
-  width: 1440px;
-  min-height: 1750px;
+  /*
+  width: 1440px;*/
 }
 
 body {
@@ -561,6 +561,12 @@ background-color: #eeeeee;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
+}
+
+.map {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0;
 }
 
 .adress {
