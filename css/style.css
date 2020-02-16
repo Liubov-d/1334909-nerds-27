@@ -398,15 +398,15 @@ margin-bottom: 80px;
 .features-list {
   display: inline-block;
   list-style: none;
-  position: relative;
   margin: 0px;
   padding: 0px;
   padding-left: 35px;
 }
 
 .features-item {
-  padding-top: 11px;
-  padding-bottom: 11px;
+padding-top: 11px;
+padding-bottom: 11px;
+position: relative;
 }
 
 .features-item::before {
@@ -414,7 +414,7 @@ margin-bottom: 80px;
   position: absolute;
   width: 25px;
   height: 2px;
-  left: -2px;
+  left: -35px;
   top: 50%;
 
   background-color: #fb565a;
