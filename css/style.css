@@ -178,13 +178,13 @@ a {
   content: "";
   
   position: absolute;
-  top: 27px;
-  left: 24px;
+  top: 32px;
+  left: 10px;
   
   width: 15px;
   height: 15px;
   
-  background-image: url("img/basket-icon.svg");
+  background-image: url("../img/basket-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   
@@ -840,11 +840,10 @@ li.filter-option:last-child {
   width: 23px;
   height: 23px;
 
-  background-image: url("img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
-  border: 2px solid #000000;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -857,11 +856,10 @@ li.filter-option:last-child {
   width: 23px;
   height: 23px;
   
-  background-image: url("img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;
-  border: 2px solid #000000;
 }
 
 .filter-input-radio + label::before {
@@ -875,15 +873,11 @@ li.filter-option:last-child {
   width: 25px;
   height: 25px;
 
-  background-image: url("img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
-  
-  /*пока не могу наладить иконки*/
-  border: 2px solid #000000;
-  border-radius: 50%;
-}
+  }
 
 .filter-input-radio:checked + label::after {
   content: "";
@@ -896,14 +890,10 @@ li.filter-option:last-child {
   width: 25px;
   height: 25px;
 
-  background-image: url("img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;
-  
-  /*пока не могу наладить иконки*/
-  border: 2px solid #000000;
- border-radius: 50%;
 }
 
 .filter-input:hover + label,
