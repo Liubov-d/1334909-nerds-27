@@ -127,25 +127,33 @@ a {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 490px;
+  width: 510px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.inner-page .basket-navigation {
+  margin-left: auto;
+}
+
 .basket-navigation {
   display: flex;
   max-width: 135px;
-  padding-left: 30px;
 }
 
 .site-navigation a,
 .basket-navigation a {
   display: block;
+  position: relative;
   padding: 25px 23px;
 
   vertical-align: middle;
   color: #000000;
+}
+
+.basket-navigation a {
+  padding-right: 0;
 }
 
 .site-navigation a:hover,
@@ -157,20 +165,43 @@ a {
 
 .site-navigation a:active 
 .basket-navigation a:active {
- color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
 }
 
-/* красное подчеркивание меню
+.basket-navigation .basket-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.basket-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background-image: url("img/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.6;
+}
+
+/* красное подчеркивание меню*/
 a.nav-inner-page::after {
 background-color: #fb565a;
 content: "";
 position: absolute;
 width: 75px;
 height: 2px;
-top: 163px;
-left: 0px;
+top: 60px;
+left: 25px;
 }
-*/
+
 
 
 .slider {
@@ -367,6 +398,7 @@ margin-bottom: 80px;
 .features-list {
   display: inline-block;
   list-style: none;
+  position: relative;
   margin: 0px;
   padding: 0px;
   padding-left: 35px;
@@ -375,6 +407,17 @@ margin-bottom: 80px;
 .features-item {
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.features-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: -2px;
+  top: 50%;
+
+  background-color: #fb565a;
 }
 
 .about-us {
@@ -519,8 +562,6 @@ background-color: #eeeeee;
   margin: 0px;
   margin-top: 80px;
 }
-
-
 
 .adress {
   display: block;
@@ -985,12 +1026,34 @@ li.filter-option:last-child {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: solid 1px rgba(0, 1, 1, 0.1);
   width: 360px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   
 }
 
-.catalog-item: nth-child(2n) {
-  margin-right: 0;
+.catalog-item-header {
+  width: 345px;
+  height: 40px;
+  padding-left: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4d4d4d;
+  opacity: 0.12;
+}
+
+.catalog-item:hover .catalog-item-header,
+.catalog-item:focus .catalog-item-header,
+.catalog-item:active .catalog-item-header {
+  opacity: 1;
+}
+
+.catalog-item-header-round {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 13px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .catalog-item .catalog-item-info { 
@@ -1007,18 +1070,25 @@ li.filter-option:last-child {
   position: relative;
 }
 
-.catalog-item .catalog-item-title h3 {
+.catalog-item-info h3 {
   font-size: 18px;
-  line-height: 18;
+  line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
+.catalog-item-info p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
 .catalog-item h3,
-.catalog-item p,
-.catalog-item .item-price {
+.catalog-item p {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .catalog-item .catalog-item-title a:hover,
@@ -1039,30 +1109,53 @@ li.filter-option:last-child {
   padding-bottom: 20px;
 }
 
-.button .button-catalog-item-info {
+a.button-catalog-item-info {
+  display: inline-block;
   width: 200px;
+  margin-left: 80px;
+  margin-bottom: 30px;
 }
 
-.pagination ul {
-list-style: none;
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+
+  list-style: none;
 }
 
-.pagination .button-pagination {
+.pagination-item a {
+  display: block;
+  margin-right: 14px;
+  padding: 17px 20px;
+  font-size: 13.5px;
+  line-height: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: #eeeeee;
   color: #000000;
-  width: 50px;
 }
 
-.pagination .next-button {
-  width: 260px;
+.pagination-item-current a {
+ padding: 14px 17px;
+ background-color: #ffffff;
+ border: solid 3px #dbdbdb;
 }
 
-.pagination .button-pagination:hover,
-.pagination .button-pagination:focus {
+.pagination-item-next a {
+  display: block;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
 }
 
-.pagination .button-pagination:active {
+.pagination-item a:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
