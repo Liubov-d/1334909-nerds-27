@@ -555,19 +555,21 @@ background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
-
 }
 
 .map {
   display: block;
-  margin: 0 auto;
-  padding: 0 0;
   width: 100%;
   min-height: 416px;
+  background-color: #eeeeee; 
   background-image: url(../img/map.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 0 auto;
 }
 
 .map-hidden {
@@ -621,6 +623,7 @@ background-color: #eeeeee;
 .main-footer {
   padding: 0;
   margin-top: 60px;
+  margin-bottom: 60px;
   background-color: white;
 }
 
@@ -681,7 +684,21 @@ background-color: #eeeeee;
 }
 
 .modal-wright-us {
-display: none;
+  position: fixed;
+  width: 960px;
+  padding: 100px 70px;
+  bottom: 180px;
+  left: 50%;
+  margin-left: -550px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+
 }
 
 .catalog-header h1 {
