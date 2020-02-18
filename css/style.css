@@ -81,14 +81,12 @@ a {
 }
 
 .main-header {
-  /* Временно для сетки */
   width: 100%;
   background-color: #eeeeee;
   padding-top: 49px;
 }
 
 .inner-page .main-header {
-  /* Временно для сетки */
   width: 100%;
   padding-top: 49px;
   margin-bottom: 0px;
@@ -99,13 +97,12 @@ a {
   opacity: 1;
 }
 
-.main-header-logo a:hover,
-.main-header-logo a:focus {
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
-/*не поняла почему не работает*/
-.main-header-logo a:active {
+.main-header-logo:active {
   opacity: 0.3;
 }
 
@@ -561,12 +558,20 @@ background-color: #eeeeee;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
+
 }
 
 .map {
   display: block;
   margin: 0 auto;
   padding: 0 0;
+  width: 100%;
+  min-height: 416px;
+  background-image: url(../img/map.png);
+}
+
+.map-hidden {
+  display: none;
 }
 
 .adress {
@@ -653,7 +658,7 @@ background-color: #eeeeee;
   background-color: #d7373b;
 }
 
-.social-icon:active {
+.social-button:active .social-icon {
   opacity: 0.3;
 }
 
@@ -984,7 +989,7 @@ li.filter-option:last-child {
 }
 
 /* почему-то не работает*/
-.sorted-type li.sorted-type-current {
+.sorted-type-current a {
   opacity: 1;
 }
 
@@ -1092,7 +1097,7 @@ li.filter-option:last-child {
   color: #fb565a;
 }
 
-.catalog-item .catalog-item-title a::active {
+.catalog-item .catalog-item-title a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
