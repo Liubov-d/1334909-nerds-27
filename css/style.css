@@ -1,7 +1,8 @@
 html,
 body {
-  /*
-  width: 1440px;*/
+  /* 
+  width: 1440px;
+  */
 }
 
 body {
@@ -29,11 +30,12 @@ a {
   
   /*
   разметка для вёрстки
-  */
+  
 
 * { 
   outline:1px solid red;
 }
+*/
 
 .button {
   display: inline-block;
@@ -564,12 +566,28 @@ background-color: #eeeeee;
 .map {
   display: block;
   width: 100%;
-  min-height: 416px;
+  height: 416px;
   background-color: #eeeeee; 
   background-image: url(../img/map.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 0 auto;
+  border: 0;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    width: 100%;
+    height: 416px;
+    
+    position:absolute;
 }
 
 .map-hidden {
@@ -684,9 +702,10 @@ background-color: #eeeeee;
 }
 
 .modal-wright-us {
+  display: none;
   position: fixed;
-  width: 960px;
-  padding: 100px 70px;
+  width: 760px;
+  padding: 70px 100px;
   bottom: 180px;
   left: 50%;
   margin-left: -550px;
@@ -698,8 +717,125 @@ background-color: #eeeeee;
 
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-
 }
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 76px;
+  right: 92px;
+
+  background-color: transparent;
+  border: 0;
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  top: 10px;
+  left: 2px;
+
+  background-color: #fb565a;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+opacity: 1;
+}
+
+.modal-close:active {
+opacity: 0.1;
+}
+
+.modal-wright-us h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.form-wright-us p,
+.form-wright-us label {
+  margin: 0;
+ 
+}
+
+.form-wright-us input[type="text"],
+.form-wright-us input[type="email"],
+.form-wright-us textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 10px;
+  padding-bottom: 15px;
+  border-style: none;
+  
+  font: inherit;
+  color: #000000;
+  border: 2px solid #d7dcde;
+}
+
+
+.form-wright-us input[type="email"]:invalid {
+  color: #e74246;
+ }
+
+.form-wright-us input:hover,
+.form-wright-us textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.form-wright-us input:focus,
+.form-wright-us textarea:focus {
+  border-color: #000000;
+}
+
+.form-wright-us input:invalid,
+.form-wright-us textarea:invalid {
+  border-color: #e74246;
+}
+
+.half-width-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.half-width {
+  display: inline-block;
+  width: 360px;
+}
+
+.letter textarea {
+  opacity: 0.5;
+}
+
+.modal-wright-us .button {
+  width: 260px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding: 15px 15px;
+}
+
+
 
 .catalog-header h1 {
   margin: 0 auto;
@@ -878,7 +1014,7 @@ li.filter-option:last-child {
   content: "";
 
   position: absolute;
-   top: -4px;
+  top: -4px;
   left: -38px;
 
   width: 23px;
