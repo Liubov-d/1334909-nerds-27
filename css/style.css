@@ -1,8 +1,8 @@
 html,
 body {
-  /* 
+  /* */
   width: 1440px;
-  */
+  
 }
 
 body {
@@ -30,12 +30,12 @@ a {
   
   /*
   разметка для вёрстки
-  
+  */
 
 * { 
   outline:1px solid red;
 }
-*/
+
 
 .button {
   display: inline-block;
@@ -110,6 +110,7 @@ a {
 
 .main-header .main-navigation {
   width: 100%;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -201,14 +202,15 @@ top: 60px;
 left: 25px;
 }
 
-
-
 .slider {
+  display: flex;
+  flex-direction: column;
   background-color: #eeeeee;
   margin: 0px;
   text-transform: none;
   width: auto;
   list-style: none;
+  position: relative;
 }
 
 .slider-info .slider-heading {
@@ -241,7 +243,7 @@ left: 25px;
 }
 
 .slider-image img {
-display: block;
+  display: block;
   margin-right: 30px;
   margin-top: 2px;
 
@@ -249,6 +251,56 @@ display: block;
 
 .slider-info .button-slider {
   margin-top: 25px;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: 300px;
+  position: absolute;
+}
+
+.slider-control-list {
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.slider-control-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-control-list a {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
+
+.current-slider-controls {
+  position: relative;
+}
+
+.current-slider-controls:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
 }
 
 .portfolio {
