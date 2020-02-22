@@ -66,14 +66,14 @@ a {
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0px;
-	padding: 0px
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -341,7 +341,7 @@ margin-bottom: 80px;
 
 .index-columns::before,
 .partners::before,
-.contacts::before {
+.partners::after {
   content: "";
   position: absolute;
   width: 1160px;
@@ -403,8 +403,8 @@ margin-bottom: 80px;
 }
 
 .features-item {
-padding-top: 11px;
-padding-bottom: 11px;
+padding-top: 10px;
+padding-bottom: 10px;
 position: relative;
 }
 
@@ -414,7 +414,7 @@ position: relative;
   width: 25px;
   height: 2px;
   left: -35px;
-  top: 50%;
+  top: calc(50% - 1px);
 
   background-color: #fb565a;
 }
@@ -449,7 +449,7 @@ position: relative;
 }
 
 .table-about-us td {
-	padding: 10px;
+  padding: 10px;
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -514,16 +514,16 @@ position: relative;
 .partners a {
   margin: 0;
   padding: 0;
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 .partners a:hover,
 .partners a:focus {
- 	opacity: 1;
+  opacity: 1;
 }
 
 .partners a:active {
-	opacity: 0.1;
+  opacity: 0.1;
 }
 
 /* линии между лого партнеров */
@@ -558,6 +558,7 @@ background-color: #eeeeee;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  min-height: 416px;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
@@ -567,27 +568,24 @@ background-color: #eeeeee;
   display: block;
   width: 100%;
   height: 416px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   background-color: #eeeeee; 
   background-image: url(../img/map.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 0 auto;
   border: 0;
+
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    width: 100%;
-    height: 416px;
-    
-    position:absolute;
+.map iframe {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border: none;
 }
 
 .map-hidden {
@@ -603,6 +601,7 @@ background-color: #eeeeee;
   padding-top: 54px;
   margin-left: 140px;
   margin-top: 54px;
+  z-index: 3;
     
   background-color: white;
 }
@@ -675,7 +674,7 @@ background-color: #eeeeee;
 }
 
 .social-button:active {
-	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
 
@@ -786,6 +785,7 @@ opacity: 0.1;
   padding-bottom: 15px;
   border-style: none;
   
+  
   font: inherit;
   color: #000000;
   border: 2px solid #d7dcde;
@@ -833,9 +833,8 @@ opacity: 0.1;
   margin-top: 45px;
   margin-bottom: 20px;
   padding: 15px 15px;
+ 
 }
-
-
 
 .catalog-header h1 {
   margin: 0 auto;
@@ -853,7 +852,7 @@ opacity: 0.1;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  }
+}
 
 .filters {
   width: 260px;
@@ -875,6 +874,7 @@ opacity: 0.1;
   margin-bottom: 60px;
   
   border: none;
+  outline: 1px;
 }
 
 
@@ -1141,10 +1141,7 @@ li.filter-option:last-child {
   opacity: 1;
 }
 
-/* почему-то не работает*/
-.sorted-type-current a {
-  opacity: 1;
-}
+
 
 .sorted-arrow {
   display: flex;
@@ -1163,6 +1160,11 @@ li.filter-option:last-child {
 }
 
 .sorted-arrow a:active {
+  opacity: 1;
+}
+
+/* почему-то не работает*/
+.sorted-type-current a {
   opacity: 1;
 }
 
