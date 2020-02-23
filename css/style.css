@@ -30,12 +30,12 @@ a {
   
   /*
   разметка для вёрстки
-  */
+ 
 
 * { 
   outline:1px solid red;
 }
-
+ */
 
 .button {
   display: inline-block;
@@ -236,8 +236,13 @@ left: 25px;
   list-style: none;
 }
 
+li.slider-item {
+  display: block;
+  list-style: none;
+}
+
 .slider .slider-info {
-  width: 385px;
+  width: 520px;
   margin: 0;
   padding: 0;
 }
@@ -800,6 +805,7 @@ background-color: #eeeeee;
   bottom: 180px;
   left: 50%;
   margin-left: -550px;
+  z-index: 5;
 
   font-size: 16px;
   font-weight: 700;
@@ -885,31 +891,35 @@ opacity: 0.1;
   padding: 10px 10px;
   padding-bottom: 15px;
   border-style: none;
-  
-  
   font: inherit;
   color: #000000;
   border: 2px solid #d7dcde;
 }
 
+.form-wright-us input[name="name"] {
+  cursor: text;
+}
 
 .form-wright-us input[type="email"]:invalid {
   color: #e74246;
  }
 
 .form-wright-us input:hover,
-.form-wright-us textarea:hover {
+.letter textarea:hover {
   border-color: #b4b9bb;
+  opacity: 1;
 }
 
 .form-wright-us input:focus,
-.form-wright-us textarea:focus {
+.letter textarea:focus {
   border-color: #000000;
+  opacity: 1;
 }
 
 .form-wright-us input:invalid,
-.form-wright-us textarea:invalid {
+.letter textarea:invalid {
   border-color: #e74246;
+  opacity: 1;
 }
 
 .half-width-wrapper {
@@ -925,9 +935,11 @@ opacity: 0.1;
   width: 360px;
 }
 
-.letter textarea {
+.letter placeholder {
   opacity: 0.5;
 }
+
+
 
 .modal-wright-us .button {
   width: 260px;
@@ -973,9 +985,7 @@ opacity: 0.1;
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
-  
   border: none;
-  outline: 1px;
 }
 
 
@@ -986,7 +996,6 @@ opacity: 0.1;
   font-weight: 700;
   margin-bottom: 20px;
 }
-
 
 .range-filter {
   margin-top: 29px;
@@ -1089,11 +1098,8 @@ li.filter-option:last-child {
 
 .filter-option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
-  user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1265,7 +1271,7 @@ li.filter-option:last-child {
 }
 
 /* почему-то не работает*/
-.sorted-type-current a {
+.sorted-current a {
   opacity: 1;
 }
 

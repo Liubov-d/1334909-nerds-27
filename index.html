@@ -32,20 +32,56 @@
       <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
       <section class="slider">
           <div class="container">
-            <div class="slider-info">
-              <span class="slider-heading">
-                  Долго, дорого,<br>
-                  скрупулезно
-              </span>
-              <p class="slider-heading-bottom">
-                  Математически выверенный дизайн<br> 
-                  для вашего сайта или мобильного приложения
-              </p>
-              <a class="button button-slider" href="studio.html">Узнать больше</a>
-            </div>
-            <div class="slider-image">
-                <img src="img/slider-1.png" width="698" height="413" alt="Долго, дорого, скрупулезно">
-            </div>
+            <ul class="slider-item-list">
+              <li class="slider-item slider-1">
+                <div class="slider-info">
+                  <span class="slider-heading">
+                   Долго, дорого,<br>
+                    скрупулезно
+                  </span>
+                  <p class="slider-heading-bottom">
+                    Математически выверенный дизайн<br> 
+                    для вашего сайта или мобильного приложения
+                  </p>
+                  <a class="button button-slider" href="studio.html">Узнать больше</a>
+                </div>
+                <div class="slider-image">
+                  <img src="img/slider-1.png" width="698" height="413">
+                </div>
+              </li>
+              <li class="slider-item slider-2">
+                <div class="slider-info">
+                  <span class="slider-heading">
+                    Любим математику<br>
+                    как никто другой
+                  </span>
+                  <p class="slider-heading-bottom">
+                    Никакого креатива, только математические формулы<br> 
+                    для расчета идеальных пропорций
+                  </p>
+                  <a class="button button-slider" href="studio.html">Узнать больше</a>
+                </div>
+                <div class="slider-image">
+                  <img src="img/slider-2.png" width="698" height="413">
+                </div>
+              </li>
+              <li class="slider-item slider-3">
+                <div class="slider-info">
+                  <span class="slider-heading">
+                    Только ночь,<br>
+                    только хардкор
+                  </span>
+                  <p class="slider-heading-bottom">
+                    Работать днем, как все? Мы против этого.<br> 
+                    Ближе к полуночи работа только начинается.
+                  </p>
+                  <a class="button button-slider" href="studio.html">Узнать больше</a>
+                </div>
+                <div class="slider-image">
+                  <img src="img/slider-3.png" width="698" height="413">
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="slider-control">
             <ul class="slider-control-list">
@@ -204,17 +240,20 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-button" href="#" aria-label="Вконтакте">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
                 <img class="social-icon" src="img/vk-icon.svg" width="26" height="15">
               </a>
             </li> 
             <li>
-              <a class="social-button" href="#" aria-label="Фейсбук">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
                 <img class="social-icon" src="img/fb-icon.svg" width="12" height="22">
               </a>
             </li>  
             <li>
               <a class="social-button" href="#" aria-label="Инстаграм">
+                <span class="visually-hidden">Инстаграм</span>
                 <img class="social-icon" src="img/insta-icon.svg" width="21" height="21">
               </a>
             </li>  
@@ -242,9 +281,7 @@
         </div>
         <div class="letter">
           <p>Текст письма:</p>
-          <textarea name="letter" id="letter-field" rows="5">
-В свободной форме
-          </textarea>
+          <textarea name="letter" id="letter-field" rows="5" placeholder="В свободной форме"></textarea>
         </div>
         <input class="button" type="submit" value="Отправить">
       </form>
@@ -253,7 +290,7 @@
       </button>
     </section>
 
-<script src="js/popup.js"></script>
+    <script src="js/popup.js"></script>
 
   </body>
 </html>

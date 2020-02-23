@@ -113,12 +113,12 @@
             <section class="sorted">
               <b class="sorted-title">Сортировать:</b>
               <ul class="sorted-type">
-                <li><a class="sorted-type-current" href="#">По цене</a></li>
+                <li><a class="sorted-current" href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По названию</a></li>
               </ul>
               <div class="sorted-arrow">
-                <a class="sorted-type-current" href="#">
+                <a class="sorted-current" href="#">
                   <input type="image" src="img/icon-arrow-down.png" width="11" height="10" class="icon-arrow" name="icon-down">
                 </a>
                 <a href="#">
@@ -280,7 +280,7 @@
           <a class="adress-tel" href="tel:+78122757575">
             тел. +7 (812) 275-75-75</a>
           </p>
-          <a class="button button-adress" href="wright-us.html">Напишите нам</a>
+          <a class="button button-wright-us" href="wright-us.html">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -290,17 +290,20 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-button" href="#" aria-label="Вконтакте">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
                 <img class="social-icon" src="img/vk-icon.svg" width="26" height="15">
               </a>
             </li> 
             <li>
-              <a class="social-button" href="#" aria-label="Фейсбук">
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
                 <img class="social-icon" src="img/fb-icon.svg" width="12" height="22">
               </a>
             </li>  
             <li>
               <a class="social-button" href="#" aria-label="Инстаграм">
+                <span class="visually-hidden">Инстаграм</span>
                 <img class="social-icon" src="img/insta-icon.svg" width="21" height="21">
               </a>
             </li>  
@@ -314,25 +317,30 @@
     </footer>
 
     <section class="modal-wright-us">
-    <h2>Напишите нам</h2>
-    <form class="form-wright-us" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" value="" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" value="" placeholder="email@example.com">
-      </p>
-      <div>
-        <p>Текст письма:</p>
-        <textarea name="letter" id="letter-field" rows="4">
-        В свободной форме
-        </textarea>
-      </div>
-      <input class="botton" type="submit" value="Отправить">
-    </form>
+      <h2>Напишите нам</h2>
+      <form class="form-wright-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="half-width-wrapper">
+          <p class="half-width">
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" name="name" id="name-field" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="half-width">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-field" value="" placeholder="email@example.com">
+          </p>
+        </div>
+        <div class="letter">
+          <p>Текст письма:</p>
+          <textarea name="letter" id="letter-field" rows="5" placeholder="В свободной форме"></textarea>
+        </div>
+        <input class="button" type="submit" value="Отправить">
+      </form>
+      <button class="modal-close" type="button">
+       <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
+
+    <script src="js/popup.js"></script>
 
   </body>
 </html>
