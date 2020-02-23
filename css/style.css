@@ -1117,6 +1117,12 @@ li.filter-option:last-child {
   opacity: 0.4;
 }
 
+ .filter-input-checkbox:focus + label::before {
+  content: "";
+  opacity: 1;
+  outline: 2px solid #a6c8ff;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
 
@@ -1148,6 +1154,12 @@ li.filter-option:last-child {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
+  }
+
+  .filter-input-radio:focus + label::before {
+  content: "";
+  opacity: 1;
+  outline: 2px solid #a6c8ff;
   }
 
 .filter-input-radio:checked + label::after {
@@ -1239,15 +1251,14 @@ li.filter-option:last-child {
   opacity: 0.3;
 }
 
-.sorted-type li:hover,
-.sorted-type li:focus {
+.sorted-type li:hover {
   opacity: 0.6;
 }
 
-.sorted-type li:active {
+.sorted-type li:active,
+.sorted-type li:focus {
   opacity: 1;
 }
-
 
 .sorted-arrow {
   display: flex;
@@ -1260,17 +1271,17 @@ li.filter-option:last-child {
   opacity: 0.3;
 }
 
-.sorted-arrow a:hover,
-.sorted-arrow a:focus {
+.sorted-arrow a:hover {
   opacity: 0.6;
 }
 
-.sorted-arrow a:active {
+.sorted-arrow a:active,
+.sorted-arrow a:focus {
   opacity: 1;
 }
 
 /* почему-то не работает*/
-.sorted-current a {
+.sorted-type .sorted-current a {
   opacity: 1;
 }
 
