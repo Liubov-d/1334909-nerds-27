@@ -162,15 +162,16 @@ a {
  color: #fb565a;
 }
 
-.site-navigation-link .site-navigation-two:focus {
+.site-navigation a:focus,
+.basket-navigation a:focus {
   color: #000000;
   opacity: 0.3;
 }
 
-.basket-navigation .basket-link:focus {
+.basket-navigation .basket-link {
   position: relative;
   padding-left: 50px;
-  opacity: 0.4;
+ 
 }
 
 .basket-link::before {
