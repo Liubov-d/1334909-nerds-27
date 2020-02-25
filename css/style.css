@@ -1,8 +1,8 @@
 html,
 body {
-  /* 
+  /* */
   width: 1440px;
-  */
+  
   
 }
 
@@ -245,16 +245,16 @@ ul.slider-item-list {
   list-style: none;
 }
 
-.slider-item.slider-3 {
+.slider-item.slider-1 {
   display: block;
   width: 1160px;
   height: 430px;
   margin: 0 auto;
   padding: 0 0;
   position: absolute;
-  list-style: none;
-  z-index: 1;
-  background-image: url("../img/slider-3.png");
+  list-style: no-repeat;
+  z-index: 3;
+  background-image: url("../img/slider-1.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #eeeeee;
@@ -262,7 +262,6 @@ ul.slider-item-list {
 
 .slider-item.slider-2 {
   display: block;
-  display: none;
   width: 1160px;
   height: 430px;
   margin: 0 auto;
@@ -276,18 +275,17 @@ ul.slider-item-list {
   background-color: #eeeeee;
 }
 
-.slider-item.slider-1 {
+.slider-item.slider-3 {
   display: block;
-  display: none;
   width: 1160px;
   height: 430px;
   margin: 0 auto;
   padding: 0 0;
   position: absolute;
-  list-style: no-repeat;
-  z-index: 3;
-  background-image: url("../img/slider-1.png");
-  background-repeat: none;
+  list-style: none;
+  z-index: 1;
+  background-image: url("../img/slider-3.png");
+  background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #eeeeee;
 }
@@ -307,8 +305,8 @@ ul.slider-item-list {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  margin-top: 300px;
+  z-index: 5;
+  margin-top: 330px;
   position: absolute;
 }
 
@@ -319,7 +317,6 @@ ul.slider-item-list {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  z-index: 5;
 }
 
 .slider-control-list li {
