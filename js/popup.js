@@ -6,12 +6,32 @@ var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var letter = popup.querySelector("[name=letter]");
 
+ var isStorageSupport = true;
+  var storage = "";
+  
+  try {
+    storage = localStorage.getItem("name");
+    storage = localStorage.getItem("email");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    name.focus();
-  });
+    if (storage) {
+      name.value = storage;
+      email.focus();
+    } else {
+      name.focus();
+    }
+     if (storage) {
+      name.value = storage;
+      email.value = storage;
+      letter.focus();
+    }
+    });
 
     close.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -25,6 +45,11 @@ var letter = popup.querySelector("[name=letter]");
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("name", name.value);
+        localStorage.setItem("email", email.value);
+      }
     }
   });
 
@@ -34,6 +59,11 @@ var letter = popup.querySelector("[name=letter]");
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
-      }
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("name", name.value);
+          localStorage.setItem("email", email.value);
+        }
+        }
     }
   });
