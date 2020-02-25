@@ -158,21 +158,19 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.basket-navigation a:hover,
-.basket-navigation a:focus {
+.basket-navigation a:hover {
  color: #fb565a;
 }
 
-.site-navigation a:active 
-.basket-navigation a:active {
+.site-navigation-link .site-navigation-two:focus {
   color: #000000;
   opacity: 0.3;
 }
 
-.basket-navigation .basket-link {
+.basket-navigation .basket-link:focus {
   position: relative;
   padding-left: 50px;
+  opacity: 0.4;
 }
 
 .basket-link::before {
