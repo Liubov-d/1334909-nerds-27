@@ -305,7 +305,7 @@ ul.slider-item-list {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  z-index: 5;
+  z-index: 7;
   margin-top: 330px;
   position: absolute;
 }
