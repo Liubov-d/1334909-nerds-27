@@ -83,18 +83,13 @@ a {
   padding: 0 0;
 }
 
-.main-header {
+.main-header,
+.inner-page .main-header {
   width: 100%;
   background-color: #eeeeee;
   padding-top: 49px;
 }
 
-.inner-page .main-header {
-  width: 100%;
-  padding-top: 49px;
-  margin-bottom: 0px;
-  background-color: #eeeeee;
-}
 
 .main-header-logo {
   opacity: 1;
@@ -134,9 +129,6 @@ a {
   list-style: none;
 }
 
-.inner-page .basket-navigation {
-  margin-left: auto;
-}
 
 .basket-navigation {
   display: flex;
@@ -464,13 +456,8 @@ margin-bottom: 80px;
   width: 400px;
 }
 
-.features p,
-.features h2
-.features h3 {
-  margin: 0;
-}
-
 .features h2 {
+  margin: 0;
   margin-top: 80px;
   font-size: 45px;
   line-height: 45px;
@@ -480,11 +467,13 @@ margin-bottom: 80px;
 }
 
 .features p {
-  margin-top: 25px;
+  margin: 0;
+  margin-top: 35px;
 }
 
 .features h3 {
-  margin-top: 35px;
+  margin: 0;
+  margin-top: 40px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -497,6 +486,7 @@ margin-bottom: 80px;
   display: inline-block;
   list-style: none;
   margin: 0px;
+  margin-top: 12px;
   padding: 0px;
   padding-left: 35px;
 }
@@ -519,15 +509,13 @@ position: relative;
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.about-us-image {
   display: block;
   margin-left: auto;
   margin-top: 45px;
+  background-image: url("../img/logo-nerds-color.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  
 }
 
 .about-us h3 {
@@ -538,7 +526,7 @@ position: relative;
   text-transform: uppercase;
   padding-right: 15px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 245px;
   margin-bottom: 50px;
   color: #000000;
 }
@@ -565,6 +553,7 @@ position: relative;
 
 .table-text td {
   padding-top: 25px;
+  padding-right: 15px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -662,6 +651,10 @@ background-color: #eeeeee;
   padding: 0px;
   margin: 0px;
   margin-top: 80px;
+}
+
+.contacts.contacts-inner-page {
+  margin-top: 60px;
 }
 
 .map {
@@ -1027,7 +1020,7 @@ opacity: 0.1;
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   border: none;
 }
 
@@ -1285,7 +1278,7 @@ li.filter-option:last-child {
 }
 
 .sorted-type li {
-  padding-left: 30px;
+  padding-left: 27px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1323,8 +1316,11 @@ li.filter-option:last-child {
   opacity: 1;
 }
 
-/* почему-то не работает*/
-.sorted-type .sorted-current a {
+li.sorted-current {
+  opacity: 1;
+}
+
+.sorted-arrow .sorted-current {
   opacity: 1;
 }
 
@@ -1343,6 +1339,7 @@ li.filter-option:last-child {
   border: solid 1px rgba(0, 1, 1, 0.1);
   width: 360px;
   margin-bottom: 25px;
+  padding: 0;
   
 }
 
@@ -1407,12 +1404,11 @@ li.filter-option:last-child {
   margin-bottom: 30px;
 }
 
-.catalog-item .catalog-item-title a:hover,
-.catalog-item .catalog-item-title a:focus {
+.catalog-item .catalog-item-title a:hover {
   color: #fb565a;
 }
 
-.catalog-item .catalog-item-title a:active {
+.catalog-item .catalog-item-title a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1437,7 +1433,7 @@ a.button-catalog-item-info {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
 
   list-style: none;
 }
