@@ -975,14 +975,11 @@ opacity: 0.1;
   opacity: 0.5;
 }
 
-
-
 .modal-wright-us .button {
   width: 260px;
   margin-top: 45px;
   margin-bottom: 20px;
   padding: 15px 15px;
- 
 }
 
 .catalog-header h1 {
@@ -1336,20 +1333,20 @@ li.sorted-current {
 .catalog-item {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: solid 1px rgba(0, 1, 1, 0.1);
   width: 360px;
   margin-bottom: 25px;
-  padding: 0;
-  
 }
 
-.catalog-item-header {
+.catalog-img a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item .catalog-item-header {
+  display: block;
   width: 345px;
   height: 40px;
-  padding-left: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: #4d4d4d;
   opacity: 0.12;
 }
 
@@ -1357,16 +1354,6 @@ li.sorted-current {
 .catalog-item:focus .catalog-item-header,
 .catalog-item:active .catalog-item-header {
   opacity: 1;
-}
-
-.catalog-item-header-round {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-top: 13px;
-  margin-right: 5px;
-  border-radius: 50%;
-  background-color: #ffffff;
 }
 
 .catalog-item .catalog-item-info { 
@@ -1379,7 +1366,6 @@ li.sorted-current {
 
 .catalog-item:hover {
   box-shadow: 0px 6px 15px 0 rgba(0, 1, 1, 0.25);
-  border: solid 1px rgba(77, 77, 77, 0.1);
   position: relative;
 }
 
