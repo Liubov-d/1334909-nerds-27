@@ -1009,18 +1009,26 @@ opacity: 0.1;
 .filter-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
-  
   border: none;
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
   border: none;
 }
 
+fieldset.filter-price {
+  margin-bottom: 60px;
+}
+
+fieldset.filter-grid {
+  margin-bottom: 50px;
+}
+
+fieldset.filter-features {
+  margin-bottom: 55px;
+}
 
 .filter-item legend {
   font-size: 18px;
@@ -1335,7 +1343,7 @@ li.sorted-current {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 360px;
   height: 616px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .catalog-img a {
@@ -1376,6 +1384,8 @@ li.sorted-current {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .catalog-item-info p {
@@ -1383,10 +1393,6 @@ li.sorted-current {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
-}
-
-.catalog-item h3,
-.catalog-item p {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -1404,7 +1410,7 @@ li.sorted-current {
   width: 360px;
   background-color: #eeeeee;
   bottom: 0px;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
 }
 
@@ -1412,7 +1418,7 @@ a.button-catalog-item-info {
   display: inline-block;
   width: 200px;
   margin-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .pagination-list {

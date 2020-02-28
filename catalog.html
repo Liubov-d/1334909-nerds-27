@@ -39,7 +39,7 @@
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-price">
                   <legend>Стоимость:</legend>
                   <div class="range-filter">
 
@@ -58,7 +58,7 @@
                   </div>
               </fieldset>  
   
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-grid">
                 <legend>Сетка:</legend>
                 <ul>
                   <li class="filter-option">
@@ -76,7 +76,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filter-item">
+              <fieldset class="filter-item filter-features">
                 <legend>Особенности:</legend>
                 <ul>
                   <li class="filter-option">
@@ -320,18 +320,18 @@
         <div class="half-width-wrapper">
           <p class="half-width">
             <label for="name-field">Ваше имя:</label>
-            <input type="text" name="name" id="name-field" value="" placeholder="Имя Фамилия">
+            <input class="validation" type="text" name="name" id="name-field" value="" placeholder="Имя Фамилия">
           </p>
           <p class="half-width">
             <label for="email-field">Ваш e-mail:</label>
-            <input type="email" name="email" id="email-field" value="" placeholder="email@example.com">
+            <input class="validation" type="email" name="email" id="email-field" value="" placeholder="email@example.com">
           </p>
         </div>
         <div class="letter">
           <p>Текст письма:</p>
-          <textarea name="letter" id="letter-field" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="validation" name="letter" id="letter-field" rows="5" placeholder="В свободной форме"></textarea>
         </div>
-        <input class="button" type="submit" value="Отправить">
+        <button class="button validation" type="submit" value="Отправить">
       </form>
       <button class="modal-close" type="button">
        <span class="visually-hidden">Закрыть</span>
