@@ -227,7 +227,7 @@ ul.slider-item-list {
 }
 
 .slider-item.slider-2 {
-  display: block;
+  display: none;
   
   width: 1160px;
   min-height: 413px;
@@ -243,8 +243,8 @@ ul.slider-item-list {
 }
 
 .slider-item.slider-3 {
-  display: block;
-  
+  display: none;
+
   width: 1160px;
   min-height: 413px;
   margin: 0 auto;
