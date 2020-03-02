@@ -2,11 +2,11 @@ var link = document.querySelector(".button-wright-us");
 var popup = document.querySelector(".modal-wright-us");
 var close = document.querySelector(".modal-close");
 var form = popup.querySelector("form");
-var validation = popup.querySelectorAll("validation");
+var validation = popup.querySelectorAll(".validation");
 
 var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
-var letter = popup.querySelector("[name=letter]");
+
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
