@@ -628,7 +628,7 @@ background-color: #eeeeee;
   padding: 0px;
 }
 
-.contacts.contacts-inner-page {
+.contacts-inner-page {
   margin-top: 60px;
 }
 
@@ -660,13 +660,21 @@ background-color: #eeeeee;
   display: none;
 }
 
+.adress-container {
+  display: block;
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 0;
+ }
+
 .adress {
   display: block;
   position: absolute;
   width: 269px;
   min-height: 250px;
-  margin-left: 140px;
-  margin-top: 54px;
+  top: 55px; 
+  left: 0px;
   padding-left: 50px;
   padding-top: 54px;
   z-index: 3;
