@@ -308,14 +308,14 @@ ul.slider-item-list {
 .current-slider-controls:before {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   left: 50%;
   top: 50%;
-  margin-left: -5px;
-  margin-top: -5px;
+  margin-left: -4px;
+  margin-top: -4px;
   border-radius: 50%;
-  border: 1px solid #c1c1c1;
+  border: 2px solid #c1c1c1;
 }
 
 .portfolio {
@@ -1141,24 +1141,34 @@ li.filter-option:last-child {
   opacity: 0.4;
 }
 
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -38px;
+  width: 27px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+ .filter-input-checkbox:hover + label::before {
+  content: "";
+  opacity: 1;
+}
+
  .filter-input-checkbox:focus + label::before {
   content: "";
   opacity: 1;
   outline: 2px solid #a6c8ff;
 }
 
-.filter-input-checkbox:checked + label::after {
+ .filter-input-checkbox:disable + label::before {
   content: "";
-  position: absolute;
-  top: -4px;
-  left: -38px;
-  width: 23px;
-  height: 23px;
-  
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1;
+  opacity: 0.1;
 }
 
 .filter-input-radio + label::before {
@@ -1175,13 +1185,7 @@ li.filter-option:last-child {
   opacity: 0.4;
   }
 
-  .filter-input-radio:focus + label::before {
-  content: "";
-  opacity: 1;
-  outline: 2px solid #a6c8ff;
-  }
-
-.filter-input-radio:checked + label::after {
+  .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -1192,11 +1196,26 @@ li.filter-option:last-child {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+  .filter-input-radio:hover + label::before {
+  content: "";
   opacity: 1;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
+  .filter-input-radio:focus + label::before {
+  content: "";
+  opacity: 1;
+  outline: 2px solid #a6c8ff;
+}
+
+  .filter-input-radio:disable + label::before {
+  content: "";
+  opacity: 0.1;
+}
+
+.filter-input + label {
   color: #283136;
 }
 
@@ -1210,12 +1229,11 @@ li.filter-option:last-child {
   width: 260px;
 }
 
-.filter .button-filter:hover,
-.filter .button-filter:focus {
+.filter .button-filter:hover {
   background-color: #dfdfdf;
 }
 
-.filter .button-filter:active {
+.filter .button-filter:focus {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
