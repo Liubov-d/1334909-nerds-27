@@ -196,12 +196,14 @@ a.nav-inner-page::after {
 .slider .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+
   position: relative;
-  min-height: 413px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0;
-}
+  padding: 0 0;
+
+  min-height: 413px;
+ }
 
 ul.slider-item-list {
   display: flex;
@@ -271,10 +273,9 @@ ul.slider-item-list {
 
 .slider-control {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   position: absolute;
-  z-index: 7;
   margin-top: 300px;
 }
 
