@@ -160,7 +160,7 @@ a.nav-inner-page::after {
   width: 75px;
   height: 2px;
   top: 60px;
-  left: 25px;
+  left: calc(50% - 37px);
   background-color: #fb565a;
 }
 
@@ -1131,9 +1131,9 @@ li.filter-option:last-child {
   color: #283136;
 }
 
-.filter-input:disabled + label,
-.filter-input:disabled {
-  color: rgba(40, 49, 54, 0.3)
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+  cursor: not-allowed;
 }
 
 .filter-input-radio + label::before {
@@ -1175,9 +1175,11 @@ li.filter-option:last-child {
   outline: 2px solid #a6c8ff;
 }
 
-.filter-input-radio:disable + label::before {
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:checked:disabled + label::before {
   content: "";
   opacity: 0.1;
+  cursor: no-drop;
 }
 
 .filter-input-checkbox + label::before {
@@ -1219,9 +1221,11 @@ li.filter-option:last-child {
   outline: 2px solid #a6c8ff;
 }
 
-.filter-input-checkbox:disable + label::before {
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::before {
   content: "";
   opacity: 0.1;
+  cursor: no-drop;
 }
 
 .filter .button-filter {
@@ -1305,11 +1309,12 @@ li.filter-option:last-child {
   flex-wrap: nowrap;
   min-width: 62px;
   margin: 0;
-
 }
 
 .sorted-arrow a {
   padding-left: 20px;
+  margin-top: -5px;
+  margin-bottom: 5px;
   opacity: 0.3;
 }
 
